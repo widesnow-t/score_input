@@ -41,7 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = '英語の点数を入力してください';
     }
     if (empty($errors)) {
-        unset($name);
         header('Location: result.html');
         exit;
     }
